@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 通用 -->
+    <color name="divider_line_color">#F1F1F1</color>
+
+    <color name="sidebar_bg">#151716</color>
+    <color name="sidebar_list_blue">#0b2937</color>
+    <color name="title_layout_bg">#3c211b</color>
+    <!-- 背景色 -->
+    <color name="common_bg">#614038</color>
+    <!-- 前景色 -->
+    <color name="common_fg">#d9ba81</color>
+    <color name="font_primary">#411e11</color>
+    <color name="font_second">#543b32</color>
+    <color name="font_third">#e3c181</color>
+    
+   <color name="blue_custom">#6699ff</color>
+    
+    
+        
+</resources>

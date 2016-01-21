@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 通用的头部 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="48dip"
+    android:background="@color/title_layout_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="88dp"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/top_bar_left_btn" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title_name"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:text="title"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/title_search"
+        android:layout_width="44dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:scaleType="center"
+        android:src="@drawable/common_menu" />
+
+    <ImageView
+        android:id="@+id/title_right"
+        android:layout_width="44dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:scaleType="center"
+        android:src="@drawable/common_menu" />
+
+</LinearLayout>

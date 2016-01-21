@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FF393939" >
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/topplug"
+        android:background="#FF393939"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/layout_content"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:orientation="vertical"
+            android:paddingBottom="20dp" >
+
+            <ImageView
+                android:layout_width="100dip"
+                android:layout_height="100dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dip"
+                android:background="@color/white"
+                android:padding="6dip"
+                android:src="@drawable/icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dip"
+                android:text="Hello Stranger!"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginTop="15dip"
+                android:background="@color/gray" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:background="@drawable/slide_bg_selector"
+                android:drawableLeft="@drawable/ic_menu_home"
+                android:drawablePadding="10dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="3dip"
+                android:text="首页"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/gray" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:background="@drawable/slide_bg_selector"
+                android:drawableLeft="@drawable/ic_menu_home"
+                android:drawablePadding="10dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="3dip"
+                android:text="收藏"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/gray" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:background="@drawable/slide_bg_selector"
+                android:drawableLeft="@drawable/ic_menu_home"
+                android:drawablePadding="10dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="3dip"
+                android:text="设置"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

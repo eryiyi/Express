@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ViewPager
+        android:layout_width="fill_parent"
+        android:layout_height="300dip" >
+    </ViewPager>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@color/android_blue"
+        android:text="公告"
+        android:textColor="@color/black" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/gray"
+        android:dividerHeight="1dip" >
+
+    </ListView>
+
+</LinearLayout>

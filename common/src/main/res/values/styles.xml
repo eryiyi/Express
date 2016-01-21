@@ -1,0 +1,29 @@
+<resources>
+
+    <!--<style name="ActivityTheme" parent="@android:style/Theme.Black.NoTitleBar">-->
+        <!--<item name="android:windowBackground">@color/gray_bg</item>-->
+        <!--<item name="android:configChanges">keyboardHidden|orientation|navigation</item>-->
+    <!--</style>-->
+
+    <!--<style name="AnimBottom" parent="@android:style/Animation">-->
+        <!--<item name="android:windowEnterAnimation">@anim/push_bottom_in</item>-->
+        <!--<item name="android:windowExitAnimation">@anim/push_bottom_out</item>-->
+    <!--</style>-->
+
+    <!--<style name="common_listview">-->
+        <!--<item name="android:layout_width">match_parent</item>-->
+        <!--<item name="android:layout_height">match_parent</item>-->
+        <!--<item name="android:background">@color/transparent</item>-->
+        <!--<item name="android:cacheColorHint">@color/transparent</item>-->
+        <!--<item name="android:divider">@drawable/divider_hor</item>-->
+        <!--<item name="android:scrollbarStyle">outsideOverlay</item>-->
+        <!--<item name="android:listSelector">@drawable/common_list_selector</item>-->
+        <!--<item name="android:scrollbars">vertical</item>-->
+        <!--<item name="android:transcriptMode">disabled</item>-->
+        <!--<item name="android:scrollingCache">false</item>-->
+        <!--<item name="android:scrollbarThumbVertical">@drawable/scrollbar_handle</item>-->
+        <!--<item name="android:footerDividersEnabled">false</item>-->
+        <!--<item name="android:headerDividersEnabled">false</item>-->
+    <!--</style>-->
+
+</resources>

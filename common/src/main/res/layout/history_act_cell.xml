@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/layout_margin"
+    android:background="@color/common_fg"
+    android:orientation="vertical"
+    android:padding="@dimen/layout_margin" >
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="loading"
+        android:textColor="@color/font_second"
+        android:textSize="@dimen/sp_14" />
+
+    <include layout="@layout/ball_layout" />
+
+</LinearLayout>

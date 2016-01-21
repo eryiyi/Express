@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:minHeight="200dp" >
+
+        <LinearLayout
+            android:id="@+id/empty_not_web_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/empty_no_wifi"
+                android:text="网络连接失败，请重试！"
+                    android:gravity="center_horizontal"
+                android:textColor="#ffa4a4a4"
+                android:textSize="@dimen/sp_18" />
+
+            <Button
+                android:id="@+id/empty_retry_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:background="@drawable/common_green_btn_bg"
+                android:text="点击重试"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_18" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/empty_loading_pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/icn_loading_indicator"
+            android:indeterminateDuration="2000"
+            android:indeterminateOnly="true" />
+
+        <TextView
+            android:id="@+id/empty_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/empty_no_data"
+            android:layout_centerInParent="true"
+            android:text="暂无数据"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18" />
+    </RelativeLayout>
+
+</LinearLayout>

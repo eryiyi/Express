@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.seeker.ui.slidemenu.SlideMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slidemenu="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/slideMenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    slidemenu:primaryShadowWidth="5dp"
+    slidemenu:secondaryShadowWidth="5dp"
+    slidemenu:slideDirection="right|left" >
+
+   <!--      <include
+        android:id="@+id/main_slidebar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        slidemenu:layout_role="primaryMenu"
+        layout="@layout/slide_menu" /> -->
+        <!--  slidemenu:layout_role="secondaryMenu"  右侧边栏， "primaryMenu" 左侧边栏-->
+    <include
+        android:id="@+id/main_slidebar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        slidemenu:layout_role="secondaryMenu"
+        layout="@layout/slide_menu" />
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        slidemenu:layout_role="content"
+        android:background="@color/gray_bg"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</com.seeker.ui.slidemenu.SlideMenu>

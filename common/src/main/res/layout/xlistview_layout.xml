@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="4dip"
+    android:background="@color/common_bg" >
+
+    <com.seeker.ui.xlist.XListView
+        android:id="@+id/listview"
+        style="@style/common_listview"
+        android:divider="@color/transparent"
+        android:dividerHeight="8dip" />
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/empty_layout" />
+
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 多存储卡，存储卡，内存卡 -->
+    <string name="geolo_lib_image_save_sdcard_deny">请插入SD卡</string>
+    <string name="geolo_lib_sdcard_not_enough">存储空间已不足，无法保存此次多媒体消息</string>
+    <string name="geolo_lib_sdcard_not_enough_warning">剩余存储空间很少，建议清理存储卡</string>
+    <string name="geolo_pulldown_drop_dowm">下拉刷新</string>
+    <string name="geolo_pulldown_release_update">松开刷新</string>
+    <string name="geolo_pulldown_loading">正在加载...</string>
+    <string name="geolo_pulldown_seen_more">更多</string>
+    <string name="geolo_listview_pull_loadmore_title">数据加载中 ...</string>
+    <string name="geolo_listview_pull_loadmore_fail_title">加载失败，点击重试</string>
+    <string name="geolo_listview_pull_loadmore_null_title">没内容了</string>
+
+</resources>

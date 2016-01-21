@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 通用 -->
+    <color name="android_light_blue">#317cd3</color>
+    <color name="android_red">#FF0000</color>
+    <color name="android_blue">#00BFFF</color>
+    <color name="android_orange">#FF8040</color>
+    <color name="android_yellow">#FFFF00</color>
+    <color name="green">#8dc500</color>
+    <color name="android_purple">#9933CC</color>
+
+
+    <color name="transparent_half">#d0000000</color>
+    <color name="transparent_third">#4C000000</color>
+    <color name="transparent_drak">#d0000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_cover">#25000000</color>
+    <color name="gray_bg">#e3e3e3</color>
+    <color name="gray_light">#F5F5F5</color>
+    <color name="gray">#9a9a9a</color>
+    <color name="gray_dark">#555555</color>
+    <color name="gray_white">#F6F6F6</color>
+    <color name="gray_white_pressed">#DDDDDD</color>
+    <color name="gray_block">#f2f2f2</color>
+    <color name="white_light">#F5F5F5</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#282b2e</color>
+
+    <color name="progress_horizontal_progress">#0099CC</color>
+    
+    
+        
+</resources>
