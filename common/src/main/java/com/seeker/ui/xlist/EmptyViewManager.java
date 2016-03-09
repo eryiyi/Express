@@ -1,6 +1,7 @@
 package com.seeker.ui.xlist;
 
 import android.app.Activity;
+import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -32,8 +33,8 @@ public class EmptyViewManager {
 
 			@Override
 			public void onClick(View v) {
-				if (mEmptyInterface != null) {
-					mEmptyInterface.doRetry();
+				if (mEmptyListener != null) {
+					mEmptyListener.doRetry();
 				}
 			}
 		});
@@ -51,14 +52,14 @@ public class EmptyViewManager {
 
 			@Override
 			public void onClick(View v) {
-				if (mEmptyInterface != null) {
-					mEmptyInterface.doRetry();
+				if (mEmptyListener != null) {
+					mEmptyListener.doRetry();
 				}
 			}
 		});
 	}
 	
-	public void setType(EmptyStyle type) {
+	public void setType(EmptyEnum type) {
 		if (mAttachView != null) {
 			mAttachView.setVisibility(View.GONE);
 		}
@@ -67,16 +68,16 @@ public class EmptyViewManager {
 		mProgressBar.setVisibility(View.GONE);
 		mNoDataTextView.setVisibility(View.GONE);
 		switch (type) {
-		case EmptyStyle_LOADING:
+		case EMPTY_LOADING:
 			mProgressBar.setVisibility(View.VISIBLE);
 			break;
-		case EmptyStyle_RETRY:
+		case EMPTY_RETRY:
 			mRetryLayout.setVisibility(View.VISIBLE);
 			break;
-		case EmptyStyle_NODATA:
+		case EMPTY_NODATA:
 			mNoDataTextView.setVisibility(View.VISIBLE);
 			break;
-		case EmptyStyle_NORMAL:
+		case EMPTY_NORMAL:
 			if (mAttachView != null) {
 				mAttachView.setVisibility(View.VISIBLE);
 			}
@@ -91,17 +92,21 @@ public class EmptyViewManager {
 		mNoDataTextView.setText(string);
 	}
 
-	EmptyInterface mEmptyInterface;
-
-	public void setEmptyInterface(EmptyInterface emptyInterface) {
-		mEmptyInterface = emptyInterface;
+	public void setNoDataImage(Drawable drawable) {
+		mNoDataTextView.setCompoundDrawablesWithIntrinsicBounds(null,drawable,null,null);
 	}
 
-	public interface EmptyInterface {
+	EmptyListener mEmptyListener;
+
+	public void setEmptyListener(EmptyListener emptyListener) {
+		mEmptyListener = emptyListener;
+	}
+
+	public interface EmptyListener {
 		public void doRetry();
 	}
 
-	public enum EmptyStyle {
-		EmptyStyle_LOADING, EmptyStyle_RETRY, EmptyStyle_NODATA, EmptyStyle_NORMAL;
-	}
+    public enum EmptyEnum {
+		EMPTY_LOADING, EMPTY_RETRY, EMPTY_NODATA, EMPTY_NORMAL;
+    }
 }

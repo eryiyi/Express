@@ -1,10 +1,12 @@
 package com.eln.lib.util.network;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
+import android.provider.Settings;
 
 public class NetworkUtil {
 	
@@ -123,6 +125,15 @@ public class NetworkUtil {
 			e.printStackTrace();
 		}
 		return ssid;
+	}
+
+	/**
+	 * 跳转到设置网络
+	 *
+	 * @param context
+	 */
+	public static void jumpToNetworkSetting(Context context) {
+		context.startActivity(new Intent(Settings.ACTION_WIRELESS_SETTINGS));
 	}
 	
 }

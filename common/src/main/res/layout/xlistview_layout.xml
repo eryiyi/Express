@@ -6,7 +6,7 @@
     android:background="@color/common_bg" >
 
     <com.seeker.ui.xlist.XListView
-        android:id="@+id/listview"
+        android:id="@+id/xlv_common"
         style="@style/common_listview"
         android:divider="@color/transparent"
         android:dividerHeight="8dip" />

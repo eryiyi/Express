@@ -22,7 +22,9 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.1.1'
-    compile 'com.kymjs.rxvolley:rxvolley:1.0.1'
+//    https://github.com/kymjs/RxVolley
+    compile 'com.kymjs.rxvolley:rxvolley:1.0.2'
+    compile 'com.kymjs.rxvolley:okhttp:1.0.1'
     compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
     compile 'com.jakewharton:butterknife:7.0.1'
 //    compile 'io.reactivex:rxjava:1.1.0'

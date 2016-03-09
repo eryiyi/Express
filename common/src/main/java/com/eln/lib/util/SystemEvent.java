@@ -101,10 +101,8 @@ public class SystemEvent {
 	}
 
 	/**
-	 * 激活监听器
-	 * 
-	 * @param eventType
-	 * @param data
+	 * 触发事件
+	 * @param msg
 	 */
 	public static void fireEvent(Message msg) {
 //		long time3 = System.currentTimeMillis();
@@ -122,12 +120,14 @@ public class SystemEvent {
 
 	}
 
-	// /**
-	// * 响应监听器
-	// * @param eventType
-	// */
-	// public static void fireEvent(int eventType) {
-	// fireEvent(eventType);
-	// }
+	 /**
+	 * 触发事件
+	 * @param eventType
+	 */
+	 public static void fireEvent(int eventType) {
+		 Message msg = Message.obtain();
+		 msg.what = eventType;
+		 fireEvent(msg);
+	 }
 
 }

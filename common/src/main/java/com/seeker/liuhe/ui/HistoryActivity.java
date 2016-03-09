@@ -52,14 +52,14 @@ public class HistoryActivity extends BaseAct  {
 //		mListView.setAdapter(mAdapter);
 //
 //		mEmptyViewManager = new EmptyViewManager(this, mListView);
-//		mEmptyViewManager.setEmptyInterface(new EmptyInterface() {
+//		mEmptyViewManager.setEmptyListener(new EmptyInterface() {
 //
 //			@Override
 //			public void doRetry() {
 //				initData();
 //			}
 //		});
-//		mEmptyViewManager.setType(EmptyStyle.EmptyStyle_NORMAL);
+//		mEmptyViewManager.setType(EmptyStyle.EMPTY_NORMAL);
 //
 //	}
 //
@@ -94,13 +94,13 @@ public class HistoryActivity extends BaseAct  {
 //				resultList = GsonUtil.fromJson2List(result,
 //						HistoryEn.class);
 //				if (TextUtils.isEmpty(arg0)) {
-//					mEmptyViewManager.setType(EmptyStyle.EmptyStyle_RETRY);
+//					mEmptyViewManager.setType(EmptyStyle.EMPTY_RETRY);
 //					return;
 //				}
 //				if (resultList.size() == 0) {
-//					mEmptyViewManager.setType(EmptyStyle.EmptyStyle_NODATA);
+//					mEmptyViewManager.setType(EmptyStyle.EMPTY_NODATA);
 //				}
-//				mEmptyViewManager.setType(EmptyStyle.EmptyStyle_NORMAL);
+//				mEmptyViewManager.setType(EmptyStyle.EMPTY_NORMAL);
 //				mAdapter = new HistoryAdapter(mContext,resultList);
 //				mAdapter.notifyDataSetChanged();
 //				mListView.onLoadComplete(true);

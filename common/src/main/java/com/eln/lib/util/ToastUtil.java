@@ -42,6 +42,10 @@ public class ToastUtil {
 		}
 	}
 
+	public static void showToast(final Context mContext, String format, Object args) {
+		showToast(mContext,String.format(format, args));
+	}
+
 	public static void showLongToast(final Context mContext,final  int resId) {
 		if(Looper.myLooper() != Looper.getMainLooper()){
 			new Handler(Looper.getMainLooper()).post(new Runnable() {
@@ -69,4 +73,5 @@ public class ToastUtil {
 			Toast.makeText(mContext, text, Toast.LENGTH_LONG).show();
 		}
 	}
+
 }

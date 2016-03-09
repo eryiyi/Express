@@ -7,6 +7,7 @@ import android.content.SharedPreferences.Editor;
 import com.eln.lib.util.log.MLog;
 
 import java.io.*;
+import java.util.HashSet;
 import java.util.Set;
 
 /**
@@ -43,7 +44,7 @@ public class SharedPreferencesUtil {
 		return mInstance;
 	}
 	
-	public boolean putString(String key, String value) {
+	public boolean  putString(String key, String value) {
 		editor = sp.edit();
 		editor.putString(key, value);
 		return editor.commit();
@@ -112,6 +113,10 @@ public class SharedPreferencesUtil {
 	public boolean putStringSet(String key, Set<String> setValue){
 		editor.putStringSet(key, setValue);
 		return editor.commit();
+	}
+	
+	public  Set<String>  getStringSet(String key){
+		return sp.getStringSet(key,new HashSet<String>());
 	}
 	
 	// 默认
