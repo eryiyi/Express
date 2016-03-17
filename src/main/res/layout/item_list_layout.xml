@@ -14,7 +14,7 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent" >
 
-        <com.seeker.ui.xlist.XListView
+        <com.eln.lib.ui.xlist.XListView
             android:id="@+id/listview"
 			style="@style/common_listview"
             android:divider="@color/transparent"

@@ -4,14 +4,14 @@
     android:layout_height="48dip"
     android:id="@+id/rl_title"
     android:adjustViewBounds="true"
-    android:background="@color/title_layout_bg" >
+    android:background="@color/colorPrimary" >
 
     <ImageView
         android:id="@+id/title_back"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_marginLeft="10dp"
-        android:src="@drawable/top_bar_left_btn" />
+        android:src="@drawable/ic_back_selector" />
 
     <TextView
         android:id="@+id/title_name"
@@ -23,7 +23,7 @@
         android:gravity="center"
         android:singleLine="true"
         android:text="title"
-        android:textColor="@color/font_third"
+        android:textColor="@color/white"
         android:textSize="20sp" />
 
 </RelativeLayout>

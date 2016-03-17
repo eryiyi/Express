@@ -16,7 +16,11 @@
     <color name="font_third">#e3c181</color>
     
    <color name="blue_custom">#6699ff</color>
-    
+
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
     
         
 </resources>

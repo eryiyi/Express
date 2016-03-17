@@ -1,6 +1,6 @@
 package com.seeker.liuhe.ui;
 
-import com.seeker.base.BaseAct;
+import com.eln.lib.base.BaseAct;
 
 
 public class HistoryActivity extends BaseAct  {

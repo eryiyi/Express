@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.eln.lib.R;
-import com.seeker.base.BaseFg;
+import com.eln.lib.base.BaseFg;
 
 public class GalleryFg extends BaseFg {
 

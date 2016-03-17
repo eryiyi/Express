@@ -1,6 +1,6 @@
 package com.seeker.liuhe.ui.entity;
 
-import com.seeker.common.entity.BaseEn;
+import com.eln.lib.common.entity.BaseEn;
 
 public class ResultEn extends BaseEn{
 	public int id;

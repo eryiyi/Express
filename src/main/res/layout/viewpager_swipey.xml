@@ -6,7 +6,7 @@
     android:layout_weight="1"
     android:orientation="vertical" >
 
-    <com.seeker.ui.viewpager.SwipeyTabsView
+    <com.eln.lib.ui.viewpager.SwipeyTabsView
         android:id="@+id/swipey_tabs"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

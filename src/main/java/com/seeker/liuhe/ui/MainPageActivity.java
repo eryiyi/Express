@@ -1,6 +1,6 @@
 package com.seeker.liuhe.ui;
 
-import com.seeker.base.BaseAct;
+import com.eln.lib.base.BaseAct;
 
 /**
  * 首页 测试单独Fragment运行情况

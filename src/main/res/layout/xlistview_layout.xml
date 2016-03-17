@@ -5,7 +5,7 @@
     android:paddingTop="4dip"
     android:background="@color/common_bg" >
 
-    <com.seeker.ui.xlist.XListView
+    <com.eln.lib.ui.xlist.XListView
         android:id="@+id/xlv_common"
         style="@style/common_listview"
         android:divider="@color/transparent"

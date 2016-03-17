@@ -11,9 +11,9 @@ import android.widget.ImageView;
 
 import com.eln.lib.R;
 import com.eln.lib.util.SystemEvent;
-import com.seeker.base.BaseWebFg;
-import com.seeker.common.ActionBarUtil;
-import com.seeker.common.SystemEventID;
+import com.eln.lib.base.BaseWebFg;
+import com.eln.lib.common.ActionBarUtil;
+import com.eln.lib.common.SystemEventID;
 
 /**
  * 首页

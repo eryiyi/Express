@@ -21,7 +21,7 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:appcompat-v7:23.2.0'
 //    https://github.com/kymjs/RxVolley
     compile 'com.kymjs.rxvolley:rxvolley:1.0.2'
     compile 'com.kymjs.rxvolley:okhttp:1.0.1'
@@ -29,5 +29,10 @@ dependencies {
     compile 'com.jakewharton:butterknife:7.0.1'
 //    compile 'io.reactivex:rxjava:1.1.0'
 //    compile 'io.reactivex:rxandroid:1.1.0'
-    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.google.code.gson:gson:2.4'
+    //https://github.com/JoanZapata/android-iconify // (v4.5)
+//    compile 'com.joanzapata.iconify:android-iconify-fontawesome:2.2.1'
+//https://github.com/mikepenz/Android-Iconics
+    compile 'com.mikepenz:iconics-core:2.5.9@aar'
+    compile 'com.mikepenz:fontawesome-typeface:4.5.0.1@aar'
 }

@@ -60,7 +60,7 @@
         <item name="android:minHeight">16dip</item>
         <item name="android:maxHeight">16dip</item>
     </style>
-        <style name="ActivityTheme" parent="@android:style/Theme.Black.NoTitleBar">
+        <style name="LibTheme" parent="@android:style/Theme.Black.NoTitleBar">
         <item name="android:windowBackground">@color/gray_bg</item>
         <item name="android:configChanges">keyboardHidden|orientation|navigation</item>
     </style>

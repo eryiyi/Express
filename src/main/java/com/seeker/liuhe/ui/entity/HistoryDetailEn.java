@@ -2,7 +2,7 @@ package com.seeker.liuhe.ui.entity;
 
 import java.util.ArrayList;
 
-import com.seeker.common.entity.BaseEn;
+import com.eln.lib.common.entity.BaseEn;
 
 public class HistoryDetailEn extends BaseEn{
 	public String betDate;
