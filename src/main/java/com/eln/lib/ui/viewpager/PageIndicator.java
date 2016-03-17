@@ -10,7 +10,9 @@ public class PageIndicator extends TextView implements IPageIndicator {
 	private int totalCount = 0;
 	private int currentPage = 1;
 	public ViewPager.OnPageChangeListener onPageChangeListener;
-	
+	private ViewPager mViewPager;
+	private int mCurrentPage;
+
 	public PageIndicator(Context context, AttributeSet attrs) {
 		super(context, attrs);
 	}
@@ -48,12 +50,13 @@ public class PageIndicator extends TextView implements IPageIndicator {
 	}
 
 	@Override
-	public void setViewPager(ViewPager view, int initialPosition) {
-		if (view == null || view.getAdapter() == null) {
+	public void setViewPager(ViewPager viewPager, int initialPosition) {
+		if (viewPager == null || viewPager.getAdapter() == null) {
             throw new IllegalStateException("ViewPager does not have adapter instance.");
         }
-        view.setOnPageChangeListener(this);
-        this.totalCount = view.getAdapter().getCount();
+		mViewPager = viewPager;
+		viewPager.setOnPageChangeListener(this);
+        this.totalCount = viewPager.getAdapter().getCount();
         this.currentPage = initialPosition + 1;
         this.setText(currentPage + "/" + totalCount);
         invalidate();
@@ -61,12 +64,17 @@ public class PageIndicator extends TextView implements IPageIndicator {
 
 	@Override
 	public void setOnPageChangeListener(OnPageChangeListener listener) {
-		
+		onPageChangeListener = listener;
 	}
 
 	@Override
 	public void setCurrentItem(int item) {
-		
+		if (mViewPager == null) {
+			throw new IllegalStateException("ViewPager has not been bound.");
+		}
+		mViewPager.setCurrentItem(item);
+		mCurrentPage = item;
+		invalidate();
 	}
 
 	@Override
