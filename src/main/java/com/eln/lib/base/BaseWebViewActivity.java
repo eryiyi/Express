@@ -8,15 +8,15 @@ import android.webkit.WebView;
 import android.widget.ProgressBar;
 
 import com.eln.lib.R;
+import com.eln.lib.common.web.CommonWebViewActivity;
 import com.eln.lib.util.log.MLog;
 import com.eln.lib.common.ActionBarUtil;
-import com.eln.lib.common.web.CommonWebViewAct;
 import com.eln.lib.common.web.MyWebChromeClient;
 import com.eln.lib.common.web.MyWebViewClient;
 /**
  * 网页WebView的基类
  */
-public abstract class BaseWebViewAct extends BaseAct {
+public abstract class BaseWebViewActivity extends BaseActivity {
 		
 
 	private static final String TAG = "BaseWebViewActivity.java";
@@ -72,7 +72,7 @@ public abstract class BaseWebViewAct extends BaseAct {
 	}
 
 	public void initWebView() {
-		CommonWebViewAct.initWebViewSettting(mContext,mWebView);
+		CommonWebViewActivity.initWebViewSettting(mContext,mWebView);
 		mWebView.setWebChromeClient(new MyWebChromeClient(mContext,mProgressBar));
 		mWebView.setWebViewClient(new MyWebViewClient(mContext, mUrl));
 		mWebView.addJavascriptInterface(this,"ndWeb");

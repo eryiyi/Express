@@ -49,7 +49,7 @@ public class MyWebChromeClient extends WebChromeClient {
 	public boolean onJsAlert(WebView view, String url, String message,
 			JsResult result) {
 		if (!TextUtils.isEmpty(message)) {
-			ToastUtil.showLongToast(view.getContext(), message);
+			ToastUtil.showToastShort(message);
 		}
 		result.confirm();  
 		return true;  

@@ -27,7 +27,7 @@ public class MyWebViewClient extends WebViewClient {
 			tempUrl = new URL(url);
 			tempUrl.getHost();
 			if(!localHost.equals(tempUrl.getHost())){
-				CommonWebViewAct.launcher(mContext, url);
+				com.eln.lib.common.web.CommonWebViewActivity.launcher(mContext, url);
 				return true;
 			}
 		} catch (MalformedURLException e) {

@@ -1,12 +1,12 @@
 package com.seeker.liuhe.ui;
 
-import com.eln.lib.base.BaseAct;
+import com.eln.lib.base.BaseActivity;
 
 /**
  * 首页 测试单独Fragment运行情况
  * @author Zhengxb 2014年7月9日
  */
-public class MainPageActivity extends BaseAct {
+public class MainPageActivity extends BaseActivity {
 //	public static final String REPORT_URL="file:///android_asset/html/index_main.html";
 	
 //	@Override

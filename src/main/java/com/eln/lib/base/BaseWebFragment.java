@@ -9,19 +9,18 @@ import android.webkit.WebView;
 import android.widget.ProgressBar;
 
 import com.eln.lib.R;
-import com.eln.lib.util.log.MLog;
-import com.eln.lib.common.ActionBarUtil;
-import com.eln.lib.common.web.CommonWebViewAct;
+import com.eln.lib.common.web.CommonWebViewActivity;
 import com.eln.lib.common.web.MyWebChromeClient;
 import com.eln.lib.common.web.MyWebViewClient;
+import com.eln.lib.util.log.MLog;
 
 
 /**
  * 碎片 Fragment的基类 
  */
-public abstract class BaseWebFg extends NdFragment {
+public abstract class BaseWebFragment extends BaseFragment {
 
-    private static final java.lang.String TAG = "BaseWebFg";
+    private static final String TAG = "BaseWebFragment";
     public WebView mWebView;
     public String localUrl;
 //    public String hostUrl;
@@ -35,7 +34,7 @@ public abstract class BaseWebFg extends NdFragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        mView = inflater.inflate(R.layout.wv_act, null);
+        mView = inflater.inflate(R.layout.wv_layout, null);
         initUrl();
         initView();
    
@@ -59,7 +58,6 @@ public abstract class BaseWebFg extends NdFragment {
 
     public void initView() {
         mWebView = (WebView) mView.findViewById(R.id.wv_layout);
-        ActionBarUtil.hideLeft(mView);
         mProgressBar = (ProgressBar) mView.findViewById(R.id.pb_layout);
         mWebView.setOnKeyListener(new View.OnKeyListener() {
 
@@ -78,10 +76,10 @@ public abstract class BaseWebFg extends NdFragment {
     }
 
     public   void initWebView() {
-        CommonWebViewAct.initWebViewSettting(mContext, mWebView);
+        CommonWebViewActivity.initWebViewSettting(mContext, mWebView);
         mWebView.setWebChromeClient(new MyWebChromeClient(this.getActivity(), mProgressBar));
         mWebView.setWebViewClient(new MyWebViewClient(mContext, localUrl));
-        mWebView.addJavascriptInterface(mContext,"ndWeb");
+//        mWebView.addJavascriptInterface(mContext,"ndWeb");
     }
 
 

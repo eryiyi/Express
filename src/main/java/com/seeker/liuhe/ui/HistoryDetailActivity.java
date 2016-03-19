@@ -1,9 +1,9 @@
 package com.seeker.liuhe.ui;
 
-import com.eln.lib.base.BaseAct;
+import com.eln.lib.base.BaseActivity;
 
 
-public class HistoryDetailActivity extends BaseAct {
+public class HistoryDetailActivity extends BaseActivity {
 	
 //	@Override
 //	protected void onCreate(Bundle savedInstanceState) {

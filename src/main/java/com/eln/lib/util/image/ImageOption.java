@@ -1,4 +1,4 @@
-package com.eln.lib.common;
+package com.eln.lib.util.image;
 
 import android.graphics.Bitmap;
 

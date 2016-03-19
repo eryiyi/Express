@@ -1,11 +1,10 @@
-package com.eln.lib.common;
+package com.eln.lib.util.sdCard;
 public class Configuration {
 	
 	/** 本地路径 -- 基路径 */
 	public static String baseCacheDir = "ELN/";
 	
 	/** 日志路径 */
-	public static final String logDir = baseCacheDir + "/log/";
 	public static final String logRunName = "runLog_";
 	public static final String logErrorName = "errorLog_";
 	

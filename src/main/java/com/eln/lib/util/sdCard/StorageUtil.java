@@ -1,18 +1,18 @@
 package com.eln.lib.util.sdCard;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.text.TextUtils;
 
 import com.eln.lib.R;
 import com.eln.lib.util.ToastUtil;
+
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
 
 /**
  * 手机内置存储卡以及外置存储卡管理工具类 
@@ -68,26 +68,26 @@ public class StorageUtil {
 	public static boolean isSDCardSapceForWriteWithTip(Context context, int fileType, int type, boolean bNeedTip) {
 		if(type == 0 && !isSDcardExist(context)) {
 			if(bNeedTip) {
-				ToastUtil.showToast(context, R.string.geolo_lib_image_save_sdcard_deny);
+				ToastUtil.showToastShort( R.string.geolo_lib_image_save_sdcard_deny);
 			}
 			return true;			
 		} else if(type == 1 && !isExternalSDCardExist(context)) {
 			if(bNeedTip) {
-				ToastUtil.showToast(context, R.string.geolo_lib_image_save_sdcard_deny);
+				ToastUtil.showToastShort( R.string.geolo_lib_image_save_sdcard_deny);
 			}
 			return true;
 		}
 
 		if(!isLimitSDCardSpaceForWrite(context,fileType, type)) {
 			if(bNeedTip) {
-				ToastUtil.showToast(context, R.string.geolo_lib_sdcard_not_enough);
+				ToastUtil.showToastShort( R.string.geolo_lib_sdcard_not_enough);
 			}
 			return true;
 		}
 
 		if(!isLimitSDCardSpaceForWriteWarning(context,fileType, type)) {
 			if(bNeedTip) {
-				ToastUtil.showToast(context, R.string.geolo_lib_sdcard_not_enough_warning);
+				ToastUtil.showToastShort( R.string.geolo_lib_sdcard_not_enough_warning);
 			}
 		}
 
@@ -126,9 +126,9 @@ public class StorageUtil {
 			if(path.getCode() == MultiCardFilePath.RET_LIMIT_SPACE_WARNNING) {
 				if(tip) {
 					if(TextUtils.isEmpty(warnningTip)) {
-						ToastUtil.showToast(context, R.string.geolo_lib_sdcard_not_enough_warning);
+						ToastUtil.showToastShort( R.string.geolo_lib_sdcard_not_enough_warning);
 					} else {
-						ToastUtil.showToast(context, warnningTip);
+						ToastUtil.showToastShort( warnningTip);
 					}
 				}
 			}
@@ -137,9 +137,9 @@ public class StorageUtil {
 			e.printStackTrace();
 			if(tip) {
 				if(TextUtils.isEmpty(unwriteTip)) {
-					ToastUtil.showToast(context, R.string.geolo_lib_sdcard_not_enough);
+					ToastUtil.showToastShort( R.string.geolo_lib_sdcard_not_enough);
 				} else {
-					ToastUtil.showToast(context, unwriteTip);
+					ToastUtil.showToastShort( unwriteTip);
 				}
 			}
 		} catch (IllegalArgumentException e) {

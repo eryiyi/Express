@@ -1,9 +1,9 @@
 package com.seeker.liuhe.ui;
 
-import com.eln.lib.base.BaseAct;
+import com.eln.lib.base.BaseActivity;
 
 
-public class HistoryActivity extends BaseAct  {
+public class HistoryActivity extends BaseActivity {
 	
 //	private XListView mListView;
 //	private HistoryAdapter mAdapter;

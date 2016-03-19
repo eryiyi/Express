@@ -27,18 +27,18 @@
  */
 package com.eln.lib.util.log;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 import android.content.Context;
 import android.text.TextUtils;
 import android.util.Log;
 
 import com.eln.lib.BuildConfig;
-import com.eln.lib.common.Configuration;
+import com.eln.lib.util.sdCard.Configuration;
 import com.eln.lib.util.sdCard.StorageUtil;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  * LOG日志工具类；如果需要指定是否需要输入，指定的TAG，知道的输出目录，调用之前需要调用init()方法

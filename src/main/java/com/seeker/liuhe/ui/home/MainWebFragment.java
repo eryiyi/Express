@@ -11,19 +11,19 @@ import android.widget.ImageView;
 
 import com.eln.lib.R;
 import com.eln.lib.util.SystemEvent;
-import com.eln.lib.base.BaseWebFg;
+import com.eln.lib.base.BaseWebFragment;
 import com.eln.lib.common.ActionBarUtil;
 import com.eln.lib.common.SystemEventID;
 
 /**
  * 首页
  */
-public class MainWebFg extends BaseWebFg {
+public class MainWebFragment extends BaseWebFragment {
 	public static final String URL="http://cos.99.com/wei/index.html";
 	
 	
-	public static MainWebFg newInstance() {
-		MainWebFg fragment = new MainWebFg();
+	public static MainWebFragment newInstance() {
+		MainWebFragment fragment = new MainWebFragment();
 		fragment.setArguments(new Bundle());
 		return fragment;
 	}

@@ -12,7 +12,9 @@ import com.eln.lib.R;
 
 /**
  * 带“返回”按钮的顶部标题的统一初始化，很多页面包含这个界面元素
+ * 使用ActionBar替换
  */
+ @Deprecated
 public class ActionBarUtil {
 
 	public interface OnBackListener {

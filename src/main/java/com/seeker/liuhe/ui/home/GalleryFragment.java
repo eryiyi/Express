@@ -8,9 +8,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.eln.lib.R;
-import com.eln.lib.base.BaseFg;
+import com.eln.lib.base.BaseFragment;
 
-public class GalleryFg extends BaseFg {
+public class GalleryFragment extends BaseFragment {
 
 	private Activity mContext;
 
@@ -34,7 +34,7 @@ public class GalleryFg extends BaseFg {
 	}
 
 	public static Fragment newInstance() {
-		GalleryFg fragment = new GalleryFg();
+		GalleryFragment fragment = new GalleryFragment();
 		fragment.setArguments(new Bundle());
 		return fragment;
 	}

@@ -13,21 +13,21 @@ import android.webkit.WebView;
 import android.widget.ProgressBar;
 
 import com.eln.lib.R;
+import com.eln.lib.base.BaseActivity;
 import com.eln.lib.util.log.MLog;
 import com.eln.lib.util.network.NetworkUtil;
-import com.eln.lib.base.BaseAct;
 import com.eln.lib.common.ActionBarUtil;
 
 /**
  * 网页WebView的基类
  */
-public class CommonWebViewAct extends BaseAct {
+public class CommonWebViewActivity extends BaseActivity {
 	public WebView mWebView;
 	public String mUrl;
 	private ProgressBar mProgressBar;
 
 	public static void launcher(Context mContext, String url) {
-		Intent intent = new Intent(mContext, CommonWebViewAct.class);
+		Intent intent = new Intent(mContext, CommonWebViewActivity.class);
 		intent.putExtra("url", url);
 		mContext.startActivity(intent);
 	}

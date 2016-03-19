@@ -1,6 +1,7 @@
 package com.eln.lib.base;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 
@@ -9,13 +10,17 @@ import java.lang.reflect.Field;
 /**
  * 碎片 Fragment的基类 
  */
-public class BaseFg extends NdFragment {
+public class BaseFragment  extends Fragment {
+
+
+	protected Context mContext;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		mContext=getActivity();
 	}
-	
+
 
 	@Override
 	public void onResume() {
