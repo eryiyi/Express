@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Message;
-import android.support.v4.app.FragmentActivity;
+import android.support.v7.app.AppCompatActivity;
 
 import com.eln.lib.util.SystemEvent;
 
@@ -13,7 +13,7 @@ import com.eln.lib.util.SystemEvent;
   * @author zhengxiaobin <gybin02@Gmail.com>
   * @since  2016/3/19 15:08
   */
-public class BaseActivity extends FragmentActivity implements SystemEvent.IEventListener {
+public class BaseActivity extends AppCompatActivity implements SystemEvent.IEventListener {
 	protected Activity mContext;
 	
     @Override
