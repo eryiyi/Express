@@ -73,7 +73,7 @@ public abstract class BaseWebViewActivity extends BaseActivity {
 
 	public void initWebView() {
 		CommonWebViewActivity.initWebViewSettting(mContext,mWebView);
-		mWebView.setWebChromeClient(new MyWebChromeClient(mContext,mProgressBar));
+		mWebView.setWebChromeClient(new MyWebChromeClient(this,mProgressBar));
 		mWebView.setWebViewClient(new MyWebViewClient(mContext, mUrl));
 		mWebView.addJavascriptInterface(this,"ndWeb");
 	}

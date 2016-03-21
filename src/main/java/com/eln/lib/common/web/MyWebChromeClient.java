@@ -17,8 +17,8 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.eln.lib.R;
+import com.eln.lib.base.BaseActivity;
 import com.eln.lib.util.ToastUtil;
-import com.eln.lib.common.ActionBarUtil;
 
 /** 
  * 继承WebChromeClient类 
@@ -29,18 +29,18 @@ public class MyWebChromeClient extends WebChromeClient {
 
 	private static final String TAG = "MyWebChromeClient.java";
 	private ProgressBar mProgressBar;
-	private Activity mContext;
+	private BaseActivity activity;
 	
-	public MyWebChromeClient(Activity context,ProgressBar progressBar) {
-		mContext=context;
+	public MyWebChromeClient(BaseActivity context, ProgressBar progressBar) {
+		activity =context;
 		mProgressBar=progressBar;
 	}
 	
 	@Override
 	public void onReceivedTitle(WebView view, String title) {
 		super.onReceivedTitle(view, title);
-		if(mContext!=null){
-			ActionBarUtil.initTitle(mContext, title);
+		if(activity !=null){
+			activity.actionBar.setTitle(title);
 		}
 	}
 	
