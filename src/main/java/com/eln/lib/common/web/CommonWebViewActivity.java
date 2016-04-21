@@ -16,7 +16,6 @@ import com.eln.lib.R;
 import com.eln.lib.base.BaseActivity;
 import com.eln.lib.util.log.MLog;
 import com.eln.lib.util.network.NetworkUtil;
-import com.eln.lib.common.ActionBarUtil;
 
 /**
  * 网页WebView的基类
@@ -35,7 +34,7 @@ public class CommonWebViewActivity extends BaseActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.wv_act);
+		setContentView(R.layout.wv_layout);
 		mUrl = getIntent().getStringExtra("url");
 		initView();
 		initWebView();
@@ -58,7 +57,6 @@ public class CommonWebViewActivity extends BaseActivity {
 
 	private void initView() {
 		mWebView = (WebView) findViewById(R.id.wv_layout);
-		ActionBarUtil.initLeft(this, null);
 		mProgressBar = (ProgressBar) findViewById(R.id.pb_layout);
 		mWebView.setOnKeyListener(new View.OnKeyListener() {
 
@@ -78,7 +76,7 @@ public class CommonWebViewActivity extends BaseActivity {
 		mWebView.setWebChromeClient(new MyWebChromeClient(this, mProgressBar));
 		mWebView.setWebViewClient(new MyWebViewClient(mContext, mUrl));
 		mWebView.setDownloadListener(new MyWebViewDownLoadListener(mContext));
-		mWebView.addJavascriptInterface(mContext, "ndWeb");
+//		mWebView.addJavascriptInterface(mContext, "ndWeb");
 	}
 
 	public static void initWebViewSettting(Context mContext,
@@ -112,7 +110,7 @@ public class CommonWebViewActivity extends BaseActivity {
 		cookieSyncManager.startSync();
 		CookieManager cookieManager = CookieManager.getInstance();
 		cookieManager.setAcceptCookie(true);
-		cookieManager.setCookie("cookie", "ddddadf");
+		cookieManager.setCookie("cookie", "seeker_cookie");
 		// 设置隐藏缩放按钮
 		webSettings.setBuiltInZoomControls(false);
 		// 不支持缩放

@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Message;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 
 import com.eln.lib.util.SystemEvent;
@@ -15,12 +16,13 @@ import com.eln.lib.util.SystemEvent;
   */
 public class BaseActivity extends AppCompatActivity implements SystemEvent.IEventListener {
 	protected Activity mContext;
-	
-    @Override
+	 public ActionBar actionBar;
+
+	 @Override
 	protected void onCreate(Bundle arg0) {
 		super.onCreate(arg0);
 		mContext=this;
-		
+		actionBar = getSupportActionBar();
 		Resources res = getResources();
 		android.content.res.Configuration config=new android.content.res.Configuration(); 
 		config.setToDefaults();  

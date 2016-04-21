@@ -77,7 +77,7 @@ public abstract class BaseWebFragment extends BaseFragment {
 
     public   void initWebView() {
         CommonWebViewActivity.initWebViewSettting(mContext, mWebView);
-        mWebView.setWebChromeClient(new MyWebChromeClient(this.getActivity(), mProgressBar));
+        mWebView.setWebChromeClient(new MyWebChromeClient(null, mProgressBar));
         mWebView.setWebViewClient(new MyWebViewClient(mContext, localUrl));
 //        mWebView.addJavascriptInterface(mContext,"ndWeb");
     }
